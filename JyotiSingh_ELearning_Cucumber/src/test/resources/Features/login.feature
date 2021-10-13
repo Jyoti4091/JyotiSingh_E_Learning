@@ -1,5 +1,6 @@
 Feature: Testing E-Learning Functionalities
 
+  #Scenario-1
   Scenario: To verify whether application allows user to get registered as Student
     Given User has launched the E-Learning application
     When User clicks on Sign up! link
@@ -15,16 +16,17 @@ Feature: Testing E-Learning Functionalities
     And Click on Register button
     Then User got registered as Student successfully
 
+  #Scenario-2
   Scenario: To verify whether application allows student to get logged in by entering valid credentials
     Given User should have launched the application
-    And User should have launched the application
     When Enter valid credentials in Username textbox
     And Enter valid credential in pass text box
     And Click on Login button
     Then Student Home page should get displayed
 
+  #Scenario-3
   Scenario: To verify whether application allows user to change the password in Edit Profile page
-    Given User should have launched the application
+    Given E-Learning pplication has been launched by user
     And User should have logged in as student and present in Home page
     When Click on Edit Profile link
     And Enter valid credentials in pass textbox
